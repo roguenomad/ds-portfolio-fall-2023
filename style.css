@@ -1,0 +1,394 @@
+
+  /***** BACKGROUNDS *****/
+  body.home {
+        background: url(../img/thailand.jpeg) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+  }
+
+  body.about {
+        background: url(../img/bali.JPG) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+  }
+
+  /***** NAVBAR *****/
+  .sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #F6F1E7; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+
+  .sidenav a {
+    font-family: Ysabeau SC;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    /* text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5); */
+    color: #D0DFF3;
+    /* text-shadow: 3px 2px 4px #000, 0 0 0 #000, 0px 3px 4px #000; */
+    font-size: 25px;
+    /* color: #D0DFF3; */
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidenav a:hover {
+    color: #999;
+  }
+
+  .menu-icon {
+    padding-top: 50vh;
+  }
+
+  /* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+  font-family: PingFang TC;
+  
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/***** DATE AND TIME *****/
+
+.container-date {
+  width: 90%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: end;
+  padding-top: 50px;
+}
+
+.date-time {
+  color: #D0DFF3;
+  font-family: Ysabeau SC;
+  font-size: 2.5vh;
+}
+
+/***** HERO *****/
+ 
+.hero {
+  position: fixed;
+  bottom: 0;
+  padding: 0 25vh 5vh 0;
+  right: 0;
+}
+
+.rectangle-flex {
+  display: flex;
+}
+
+.rectangle {
+  width: 55vw;
+  height: 250px;
+  border-top: 5px solid #fff;
+  border-right: 5px solid #fff;
+  border-radius: 15px;
+} 
+
+.engraved {
+  text-shadow: 0px 1px 0px rgba(255,255,255,.3), 0px -0.5px 0px rgba(0,0,0,.7);
+}
+
+.hero h1{
+  margin: 5px;
+  padding-left: 20px;
+  font-size: 3.75vw;
+  color: #D0DFF3;
+  }
+
+.typewrite {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: end;
+  text-decoration: none;
+  color: #fff;
+  font-family: Ysabeau SC;
+  /* font-weight: 400; */
+}
+
+.icons {
+  margin: 0;
+  padding: 0;
+  display: block;
+  width: 30px;
+  height: auto;
+  padding-left: 10px;
+}
+
+.icon {
+  margin: 0;
+  padding: 0;
+  width: 2.5vw;
+  height: 2.5vw;
+}
+
+.icon:hover {
+  /* background-color: #999;
+  border-radius: 10px; */
+  color: #fff;
+  box-shadow: 0 0 5px #fff;
+  text-shadow: 0 0 5px #fff;
+  /* border-radius: 1px; */
+}
+
+div a .br-1{
+  border-radius: 3px;
+}
+
+div a .br-2{
+  border-radius: 50%;
+  padding: 1px;
+}
+
+div a .br-3{
+  border-radius: 3px;
+  padding: 0px 3px;
+}
+
+
+
+/***** CAMERA *****/
+
+.camera {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 25px;
+}
+
+.popup {
+  width: 5vh;
+  height: 5vh;
+  background-color: #fff;
+  opacity: 0.5;
+  border-radius: 50%;
+}
+
+.popup:hover {
+  opacity: 1;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myPopup {
+  /* visibility: hidden; */
+  width: 160px;
+  background-color: rgba(85, 85, 85, .80);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 80%; 
+  left: 50%; 
+  margin-left: -125px;
+}
+
+#myPopup::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color:  rgba(85, 85, 85, .80) transparent transparent transparent;
+}
+
+
+/*********** ABOUT ************/
+
+#about-body {
+  position: fixed;
+  top: 0;
+  right: 0;
+  /* margin: 0;
+  padding:0; */
+}
+
+/* .about-hero {
+  display: flex;
+} */
+.about {
+  font-family: PingFang TC;
+}
+
+.about h4 {
+  font-size: 25px;
+  font-family: Ysabeau SC;
+  color: #fff;
+}
+
+.material {
+  left: 0;
+  top: 0;
+  padding: 25%;
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform-style: preserve-3d;
+	transform: rotateZ(-20deg);
+}
+
+@keyframes rotate {
+	0% {
+		transform: rotateX(0deg);
+	}
+	100% {
+		transform: rotateX(360deg);
+	}
+}
+
+.dna {/*line*/
+	position: relative;
+	width: 1px;
+	height: 100px;
+	border: 1px dotted #e7e7e7;
+	box-shadow: 0 0 15px #e7e7e7;
+	background: transparent;
+	margin: 0px 10px;
+	animation: rotate 3s linear infinite;
+}
+.dna::before {/*top dot*/
+	content: '';
+	position: absolute;
+	top: -2px;
+	left: -5px;
+	width: 10px;
+	height: 10px;
+	background: #1cffb3;
+	border-radius: 50%;
+	box-shadow: 0 0 15px #1cffb3;
+}
+.dna::after {/*bottom dot*/
+	content: '';
+	position: absolute;
+	bottom: -2px;
+	left: -5px;
+	width: 10px;
+	height: 10px;
+	background: #0ff;
+	border-radius: 50%;
+	box-shadow: 0 0 12px #0ff;
+}
+
+.dna:nth-child(1) {
+  animation-delay: -0.15s;
+}
+.dna:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.dna:nth-child(3) {
+  animation-delay: -0.45s;
+}
+.dna:nth-child(4) {
+  animation-delay: -0.6s;
+}
+.dna:nth-child(5) {
+  animation-delay: -0.75s;
+}
+.dna:nth-child(6) {
+  animation-delay: -0.9s;
+}
+.dna:nth-child(7) {
+  animation-delay: -1.05s;
+}
+.dna:nth-child(8) {
+  animation-delay: -1.2s;
+}
+.dna:nth-child(9) {
+  animation-delay: -1.35s;
+}
+.dna:nth-child(10) {
+  animation-delay: -1.5s;
+}
+.dna:nth-child(11) {
+  animation-delay: -1.65s;
+}
+.dna:nth-child(12) {
+  animation-delay: -1.8s;
+}
+.dna:nth-child(13) {
+  animation-delay: -1.95s;
+}
+.dna:nth-child(14) {
+  animation-delay: -2.1s;
+}
+.dna:nth-child(15) {
+  animation-delay: -2.25s;
+}
+.dna:nth-child(16) {
+  animation-delay: -2.3s;
+}
+
+.box-content {
+  display: flex;
+}
+
+.text-box {
+  width: 50vh;
+  height: 45vh;
+  background-color: #fff;
+  opacity: 0.75;
+  border-radius: 5%;
+}
+
+.skills-box {
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+}
+
+.skills h4 {
+  padding-bottom: 20px;
+}
+
+
+.skills {
+  padding: 5%;
+  /* width: 50vh; */
+}
+
+.skill-desc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+  background-color: #fff;
+  opacity: 0.75;
+  border-radius: 15px;
+}
+
+
