@@ -1,5 +1,10 @@
-
-  /***** BACKGROUNDS *****/
+/***** FONTS *****/
+/* accents font-family: Ysabeau SC; */
+/* main font-family: PingFang TC; */
+ 
+ 
+ 
+ /***** BACKGROUNDS *****/
   body.home {
         background: url(../img/thailand.jpeg) no-repeat center center fixed; 
         -webkit-background-size: cover;
@@ -14,6 +19,23 @@
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
+  }
+
+  body.projects {
+    background: url(../img/yosemite-2.JPG) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+  }
+  body.travel {
+    background: url(../img/yos-card.JPG) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+    /* grid-template-rows: 200px 200px 200px 200px; */
+    /* display: block; */
   }
 
   /***** NAVBAR *****/
@@ -35,7 +57,7 @@
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     /* text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5); */
-    color: #D0DFF3;
+    color: #1e1e1e;
     /* text-shadow: 3px 2px 4px #000, 0 0 0 #000, 0px 3px 4px #000; */
     font-size: 25px;
     /* color: #D0DFF3; */
@@ -199,7 +221,7 @@ div a .br-3{
 }
 
 #myPopup {
-  /* visibility: hidden; */
+  visibility: hidden;
   width: 160px;
   background-color: rgba(85, 85, 85, .80);
   color: #fff;
@@ -224,15 +246,32 @@ div a .br-3{
   border-color:  rgba(85, 85, 85, .80) transparent transparent transparent;
 }
 
+#myPopup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
 
 /*********** ABOUT ************/
 
-#about-body {
-  position: fixed;
-  top: 0;
-  right: 0;
-  /* margin: 0;
-  padding:0; */
+.about-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -55vh;
+  margin-left: 25vw;
+  position: absolute;
 }
 
 /* .about-hero {
@@ -242,7 +281,12 @@ div a .br-3{
   font-family: PingFang TC;
 }
 
+#about-body {
+  width: 60vw;
+}
+
 .about h4 {
+  padding-bottom: 3px;
   font-size: 25px;
   font-family: Ysabeau SC;
   color: #fff;
@@ -251,8 +295,11 @@ div a .br-3{
 .material {
   left: 0;
   top: 0;
-  padding: 25%;
-	position: fixed;
+  /* padding: 25%; */
+	/* position: fixed; */
+  position: fixed;
+  margin-top: 25vh;
+  margin-left: 55vw;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -358,13 +405,22 @@ div a .br-3{
 .text-box {
   width: 50vh;
   height: 45vh;
-  background-color: #fff;
-  opacity: 0.75;
+  background-color: rgba(255,255,255,.75);
   border-radius: 5%;
+}
+
+.text-box p {
+  text-align: center;
+  padding: 10px;
+}
+
+#skillsBox {
+
 }
 
 .skills-box {
   display: flex;
+  /* width: 90vw; */
   /* align-items: center;
   justify-content: center; */
 }
@@ -386,9 +442,175 @@ div a .br-3{
   margin-bottom: 10px;
   padding: 10px;
   width: 100%;
-  background-color: #fff;
-  opacity: 0.75;
+  background-color: rgba(0,0,0, 0.75);
+  color: #fff;
+  /* background-color: #fff;
+  opacity: 0.75; */
   border-radius: 15px;
+}
+
+.skill-desc:hover {
+  background-color: rgba(255,255,255, 0.75);
+  color: #000;
+  transition: 0.3s;
+}
+
+/***** Projects *****/
+
+.cards-proj {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -40vh;
+  font-family: PingFang TC;
+}
+.img-proj-card {
+  width: 300px;
+  height: 200px;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+
+.card-proj {
+  width: 300px;
+  background-color: rgba(71, 85, 30, 0.75);
+  color:rgba(255,255,255, 0.9);
+  border-radius: 15px;
+}
+
+.card-body-proj {
+  padding: 5px;
+}
+
+.img-proj-card:hover {
+  background-color: #fff;
+  transition: .3s ease;
+}
+
+.card-proj a {
+  text-decoration: none;
+  color: #fff;
+}
+.link-proj h6 {
+ color: #fff;
+ font-family: Ysabeau SC;
+}
+
+.card-title {
+  font-family: Ysabeau SC;
+  font-size: 3vh;
+}
+
+.card-subtitle {
+  font-family: Ysabeau SC;
+  padding-top: 1vh;
+}
+
+.card-text-proj {
+ padding-top: 2vh;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #fff
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+/***** Travels *****/
+.travel-card-size {
+  width: 300px;
+  height: 150px;
+}
+
+.cards-travel {
+  /* display: inline-grid; */
+  /* gap: 50px 100px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-left: 5vh;
+  /* margin-top: -300px; */
+  /* grid-template-columns: 100%; */
+  /* display: inline-grid;
+    grid-gap: 10px;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+    grid-auto-rows: 100px; */
+    /* width: 100%; */
+}
+
+.card-travel-2 {
+  margin-top: -700px;
+}
+
+
+.card-trav {
+  /* width: 250px;
+  height: 200px;
+  background-color: rgba(0,0,0, 0.15);
+  border-bottom: 2px solid #fff;
+  border-left: 2px solid #fff;
+  border-radius: 10px; */
+  /*  */
+  /* grid-column-start: 1;
+  grid-column-end: 3; */
+}
+
+.img-card-trav {
+  display: flex;
+}
+
+.img-card-trav img {
+   width: 325px;
+  height: 275px; 
+  border-radius: 10px;
+  color: #f1f1f1;
+}
+
+
+.text-overlay {
+
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  transition: .5s ease;
+  opacity: 0;
+  border-radius: 10px;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+.card-text-trav {
+  margin-top: 150px;
+  /* bottom: 0; */
+  padding: 5px;
+}
+
+.card-trav-title {
+  color: #fff;
+  padding: 3px 5px;
 }
 
 
