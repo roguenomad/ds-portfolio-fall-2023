@@ -6,9 +6,45 @@
     <link rel="stylesheet" type="text/css" href="./css/style.css"/>
     <link rel="stylesheet" type="text/css" href="./css/reset.css"/>
     <link rel="stylesheet" type="text/css" href="./css/normalize.css"/>
-    <title>Document</title>
+    <title>Contact</title>
+    <link rel="icon" href="./img/monogram.png">
 </head>
-<body>
+<body class="contact">
+    <div id="mySidenav" class="sidenav engraved">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./travel.html">Travels</a>
+        <a href="./project.html">Projects</a>
+        <a href="./contact.html">Get in Touch</a>
+    </div>    
+      <img src="./img/icons8-menu-vertical-48.png" alt="dots" class="menu-icon" onclick="openNav()"open>
+
+    <div class="contact-hero">
+      <div class="contact">
+        <h2 class="title-contact">Get in Touch</h2>
+        <div class="rectangle-flex">
+        <div class="rectangle contact-rect">
+            <form action="" class="contact-form">
+                <!-- <label for="name"></label> -->
+                <input type="text" class="name" name="name" placeholder="name" required>
+                <input type="email" class="email" name="email" placeholder="email" required>
+                <textarea name="message" id="message" placeholder="message" cols="30" rows="10" required></textarea>
+                <button type="submit" class="contact-button">Send</button>
+            </form>
+        </div>
+        <div class="icons">
+            <a href="https://www.linkedin.com/in/nohely-garcia/"><img src="./img/linkedin-icon.png" class="icon btn-3 br-1"></a>
+            <a href="https://github.com/roguenomad"><img src="./img/icons8-github-50.png" class="icon br-2"></a>
+            <a href="mailto:connectedconfessions.com"><img src="./img/icons8-mail-50.png" class="icon br-3"></a>
+            <!-- add link to designs: figma or dribbble -->
+        </div>
+      </div>
+    </div>
+
+
+      </div>
     
+      <script src="./js/navbar.js"></script>
 </body>
 </html>
