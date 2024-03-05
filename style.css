@@ -274,14 +274,12 @@ div a .br-3{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: -55vh;
+  margin-top: -50vh;
   margin-left: 25vw;
   position: absolute;
 }
 
-/* .about-hero {
-  display: flex;
-} */
+
 .about {
   font-family: PingFang TC;
 }
@@ -290,12 +288,99 @@ div a .br-3{
   width: 60vw;
 }
 
-.about h4 {
-  padding-bottom: 3px;
-  font-size: 25px;
+.skills h4 {
+  text-align: center;
+  margin-bottom: 3px;
+  font-size: 2.75vh;
   font-family: Ysabeau SC;
-  /* color: #000; */
+  background-color: rgba(255,255,255,.85);
+  border-radius: 15px;
+  padding: 1vh;
+  height: 1.5vh;
+  width: 20vh;
+  margin-bottom: 2vh;
+  margin-left: 3vh;
 }
+
+.box-content {
+  display: flex;
+}
+
+.text-box {
+  width: 50vh;
+  /* height: 45vh; */
+  background-color: rgba(255,255,255,.85);
+  border-radius: 5%;
+  padding: 1vh;
+  line-height: 1.25;
+}
+.text-box h3 {
+  font-size: 3vh;
+  font-family: Ysabeau SC;
+  font-weight: 500;
+  padding-bottom: 1vh;
+}
+
+.text-box span {
+  /* text-align: center; */
+  /* padding: 10px; */
+  margin-bottom: 1vh;
+  text-align: center;
+}
+
+.text-span {
+  padding-bottom: 1vh;
+}
+
+.text-box a {
+  color: #000;
+}
+
+#skillsBox {
+
+}
+.skills {
+
+}
+
+.skills-box {
+  display: flex;
+  /* width: 90vw; */
+  /* align-items: center;
+  justify-content: center; */
+}
+
+.skills h4 {
+  padding-bottom: 20px;
+}
+
+
+.skills {
+  padding: 5%;
+  /* width: 50vh; */
+}
+
+.skill-desc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+  background-color: rgba(0,0,0, 0.75);
+  color: #fff;
+  /* background-color: #fff;
+  opacity: 0.75; */
+  border-radius: 15px;
+}
+
+.skill-desc:hover {
+  background-color: rgba(255,255,255, 0.75);
+  color: #000;
+  transition: 0.3s;
+}
+
+/*** DNA ***/
 
 .material {
   left: 0;
@@ -403,71 +488,45 @@ div a .br-3{
   animation-delay: -2.3s;
 }
 
-.box-content {
+/***** Projects *****/
+
+.projects-body {
+  /* display: grid; */
   display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
-.text-box {
-  width: 50vh;
-  height: 45vh;
-  background-color: rgba(255,255,255,.75);
-  border-radius: 5%;
-}
-
-.text-box p {
-  /* text-align: center; */
-  /* padding: 10px; */
-}
-
-#skillsBox {
-
-}
-
-.skills-box {
+.card-proj-stack-1 {
   display: flex;
-  /* width: 90vw; */
+  /* display: flex;
+  align-items: center;
+  justify-content: space-around; */
   /* align-items: center;
+  justify-content: space-evenly; */
+  /* margin: 1vh; */
+}
+
+.cards-proj-1 {
+  /* display: flex;
+  align-items: center;
+  justify-content: space-evenly; */
+  margin: -60vh 5vh 0vh 0;
+  /* display: flex;
+  align-items: center;
   justify-content: center; */
 }
 
-.skills h4 {
-  padding-bottom: 20px;
-}
-
-
-.skills {
-  padding: 5%;
-  /* width: 50vh; */
-}
-
-.skill-desc {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 10px;
-  padding: 10px;
-  width: 100%;
-  background-color: rgba(0,0,0, 0.75);
-  color: #fff;
-  /* background-color: #fff;
-  opacity: 0.75; */
-  border-radius: 15px;
-}
-
-.skill-desc:hover {
-  background-color: rgba(255,255,255, 0.75);
-  color: #000;
-  transition: 0.3s;
-}
-
-/***** Projects *****/
-
 .cards-proj {
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
   margin-top: -40vh;
   font-family: PingFang TC;
+}
+
+.card-proj-stack-2 {
+ margin-top: -55vh;
 }
 .img-proj-card {
   width: 300px;
@@ -485,6 +544,11 @@ div a .br-3{
 }
 
 .card-body-proj {
+  padding: 5px;
+  min-height: 275px;
+}
+
+.card-body-proj-main {
   padding: 5px;
 }
 
@@ -693,13 +757,27 @@ form button {
   /* background-color: ; */
 }
 
+form button:hover {
+  background-color: rgba(239, 239, 239, 1.0);
+  transition: 0.3s ease;
+}
+
+form button:active {
+  transform: translateY(4px);
+  /* transition: 0.3s ease; */
+}
+
+
 
 
 .contact-form input::placeholder {
   color: #fff;
+  padding-left: 0.5vh;
 }
 .contact-form textarea::placeholder {
   color: #fff;
+  /* padding-top: .5vh; */
+  padding: 0.5vh 0 0 0.5vh;
 }
 
 .contact-form input:focus{
