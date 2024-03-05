@@ -322,8 +322,6 @@ div a .br-3{
 }
 
 .text-box span {
-  /* text-align: center; */
-  /* padding: 10px; */
   margin-bottom: 1vh;
   text-align: center;
 }
@@ -336,18 +334,12 @@ div a .br-3{
   color: #000;
 }
 
-#skillsBox {
-
-}
-.skills {
-
+.resume {
+  padding-top: 1vh;
 }
 
 .skills-box {
   display: flex;
-  /* width: 90vw; */
-  /* align-items: center;
-  justify-content: center; */
 }
 
 .skills h4 {
